@@ -1,0 +1,9 @@
+---
+- name: pkg install
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: install htop
+      package:
+       name: htop
